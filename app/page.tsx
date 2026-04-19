@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { motion } from "framer-motion";
+
 import {
   ArrowRight,
   BookOpen,
@@ -206,13 +206,10 @@ export default function KaushikiPortfolio() {
               ) : null}
             </header>
 
-            <motion.section
-              id="home"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)]"
-            >
+            <section
+  id="home"
+  className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)]"
+>
               <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
                 <div className="p-7 sm:p-10 lg:p-12">
                   <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
@@ -300,7 +297,7 @@ export default function KaushikiPortfolio() {
                   </div>
                 </div>
               </div>
-            </motion.section>
+            </section>
 
             <section id="experience" className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
               <SectionTitle
