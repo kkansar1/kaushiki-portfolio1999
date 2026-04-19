@@ -95,7 +95,15 @@ const stats = [
   { value: "3", label: "Core focus areas" },
 ];
 
-function SectionTitle({ eyebrow, title, text }) {
+function SectionTitle({
+  eyebrow,
+  title,
+  text,
+}: {
+  eyebrow: string;
+  title: string;
+  text?: string;
+})  {
   return (
     <div className="mb-6">
       <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-500">{eyebrow}</p>
