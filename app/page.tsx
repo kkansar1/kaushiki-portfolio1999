@@ -533,15 +533,38 @@ export default function KaushikiPortfolio() {
 </div>
             
 
-            <section id="publications" className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
+           <section id="publications" className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
   <SectionTitle
     eyebrow="Publications"
     title="Publications and Research"
     text=""
   />
-  <p className="text-sm leading-6 text-slate-700">
-    Ongoing research with Carnegie Mellon University (HCI) focusing on AI in Education.
-  </p>
+
+  <ul className="mt-4 space-y-5 text-sm leading-6 text-slate-700">
+
+    {/* Medium Article */}
+    <li>
+      <p className="font-medium">
+        Kansara, K. (2026).{" "}
+        <a
+          href="https://medium.com/@kkansar1/when-dashboards-start-teaching-building-an-ai-system-that-doesnt-just-analyze-students-it-94e8df644d35"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          When Dashboards Start Teaching: Building an AI System That Doesn’t Just Analyze Students, It Supports Them
+        </a>
+      </p>
+      <p className="text-slate-500">Medium</p>
+    </li>
+
+    {/* Ongoing Research */}
+    <li>
+      <p className="font-medium">
+        Ongoing research with Carnegie Mellon University (HCI) focusing on AI in Education.
+      </p>
+    </li>
+
+  </ul>
 </section>
 
             <section id="contact" className="mt-8 mb-10 rounded-[2rem] border border-slate-200 bg-slate-950 p-7 text-white shadow-xl shadow-slate-950/10 sm:p-10">
